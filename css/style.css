@@ -16,11 +16,12 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 25px;
     box-sizing: border-box;
 }
 
@@ -113,4 +114,65 @@ body {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+img {clear: both;
+    height: 15px;
+    width: 45px;
+    margin-top: 15px;
+}
+
+li {
+    display: inline-block;
+    font-size: smaller;
+    
+}
+
+ul {
+    display: flex;
+    margin-top: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+nav {
+    width: 250px;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding-top: 15px;
+    position: relative;
+}
+
+nav ul li a::after{
+    position: absolute;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 50%;
+    margin-left: -45%;
+}
+
+nav ul li a:hover::after {
+    border-top: 2px solid #0065FC;
+}
+
+nav ul li a:hover {
+    color: #0065FC;
 }
