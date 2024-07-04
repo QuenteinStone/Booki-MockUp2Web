@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0px;
+    max-width: 1440px;
 }
 
 .main-container {
@@ -168,6 +169,10 @@ body {
 }
 
 /*****Things to Do ******/
+
+.things-to-do {
+    margin-top: 50px;
+}
 
 .Things-to-do-card {
     display: flex;
@@ -373,4 +378,86 @@ main div a:hover {
 footer li {
     padding-bottom: 15px;
 }
+    
 
+@media all and (max-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: end;
+    }
+
+    .accommodation-and-popular {
+        display: block;
+    }
+
+    .accommodation {
+        width: 100%;
+    }
+
+    .accomodation-cards .card {
+    width: 30%;
+    }
+
+    .accomodation-cards .card .card-subtitle {
+        font-size: medium;
+    }
+
+    .popular {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .popular-cards {
+        display: inline-flex;
+        justify-content: space-between;
+    
+    }
+
+    .popular-cards .card {
+       width: 30%;
+       height: 200px;
+    ;
+    
+    }
+
+
+    .popular-cards img {
+       width: 30%;
+       height: 200px;
+    }
+
+    .popular-cards .card-title {
+        font-size: 15px;
+    }
+
+    .popular-cards .card-subtitle {
+        font-size: 15px;
+    }
+
+    .Things-to-do {
+        padding-top: 50px;
+    }
+
+    .Things-to-do-card .card {
+        width: 22%;
+        height: 260px;
+    }
+
+    .Things-to-do-card .card img {
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .Things-to-do-card h2 {
+        font-size: 1em;
+    }
+
+    .footer .footer-section h2 {
+        font-size: large;
+    }
+
+    .footer .footer-section .footer-column li {
+        font-size: medium;
+    }
+}
