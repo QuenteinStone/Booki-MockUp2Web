@@ -461,3 +461,157 @@ footer li {
         font-size: medium;
     }
 }
+
+@media all and (max-width: 768px) {
+    
+.main-container {
+    padding: 0px;
+}
+
+    header {
+        display: block;
+        padding-bottom: 0px;
+    }
+    
+    img {
+       margin-left: 350px;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul li {
+        font-size: xx-large;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 2px solid #0065FC;
+        border-width: 200%;
+        border-top: 0px;
+
+    }
+
+    nav ul li a:hover ::after {
+        border-top: none;
+    }
+
+    main h1 {
+        font-size:xxx-large;
+    }
+
+    main p {
+        font-size: xx-large;
+    }
+
+    main form {
+        width: 100%;
+        margin-left: 40px;
+    }
+    
+    .search-input {
+        width: 70%;
+    }
+
+    .filters {
+        display: inline-block;
+    }
+
+    .filter-button {
+        width: 200px;
+        height: 60px;
+        display: inline-flex;
+        margin-top: 30px;
+        margin-right: 20px;
+        margin-left: 100px;
+        border: 4px solid;
+        border-color: #F2F2F2;
+    }
+
+    .filter-button h2 {
+        font-size: large;
+    }
+
+    .filter-img {
+        margin-left: 0px;
+    }
+
+    .info-line {
+        margin-top: 40px;
+    }
+
+    .info-line img {
+        margin-left: 0px;
+    }
+
+    .info-word {
+        font-size: x-large;
+    }
+
+    .accommodation-and-popular section {
+        border-radius: 0px;
+    }
+
+    .accommodation-and-popular {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .popular-cards {
+        display: block;
+    }
+
+    .popular-cards .card {
+        width: 100%;
+    }
+
+    .popular-cards .card-title {
+        font-size: x-large;
+    }
+
+    .accomodation-cards .card-column {
+        display: block;
+    }
+
+    .accomodation-cards .card {
+        width: 100%;
+    }
+
+    .accomodation-cards img {
+        object-fit: fill;
+    }
+
+    .accommodation-and-popular .accommodation {
+        background-color: #ffffff;
+    }
+
+    .Things-to-do-card {
+        display: inline-block;
+        width:100%;
+
+    }
+
+    .Things-to-do-card .card {
+        display: block;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .Things-to-do-card .card img {
+        object-fit: fill;
+    }
+
+    .footer {
+        display: block;
+    }
+
+
+
+   
+}
