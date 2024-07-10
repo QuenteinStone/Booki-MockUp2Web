@@ -67,6 +67,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    height: 660px;
 }
 
 /****** Accommodation ***********/
@@ -84,8 +85,8 @@ body {
     display: inline-block;
     margin-top: 33px;
     margin-bottom: 20px;
-    width: 25%;
-    height: 300px;
+    width: 30%;
+    height: 210px;
 }
 
 .accomodation-cards img {
@@ -108,10 +109,12 @@ body {
 .accomodation-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-size: medium;
 }
 
 .accomodation-cards .card-subtitle {
     margin: 0;
+    font-size: small;
 }
 
 .accomodation-cards .card-rating {
@@ -137,11 +140,12 @@ body {
 .popular-cards .card {
     display: flex;
     margin-top: 33px;
+    height: 150px;
 }
 
 .popular-cards img {
     width: 25%;
-    height: 200px;
+    height: 150px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -158,10 +162,12 @@ body {
 .popular-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
+    font-size:medium ;
 }
 
 .popular-cards .card-subtitle {
     margin: 0;
+    font-size: small;
 }
 
 .popular-cards .card-rating {
@@ -182,7 +188,7 @@ body {
 
 .Things-to-do-card .card {
 display: inline-block;
-width: 20%;
+width: 23%;
 height: 439px;
 padding: 0, 30px;
 }
@@ -190,7 +196,12 @@ padding: 0, 30px;
 .Things-to-do-card .card img {
     height: 380px;
     width: 100%;
-    object-fit: fill;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.Things-to-do-card h2 {
+    font-size: larger;
 }
 
 
@@ -220,6 +231,7 @@ ul {
     margin-top: 0px;
     padding: 0px;
     margin-right: 0px;
+    justify-content: flex-end;
     
 }
 
@@ -231,6 +243,10 @@ a {
 
 nav {
     width: 500px;
+}
+
+#li1 {
+    padding-right: 150px;
 }
 
 nav ul li a{
@@ -263,42 +279,51 @@ main p {
 }
 
 main form {
-    display: inline-block;
+    display: flex;
     align-content: center;
-    height: 49px;
+    height: 60px;
     width: 338px;
     margin-bottom: 50px;
-    border: 1px;
     border-radius: 15px
 }
 
 main form img {
-    height: 49px;
-    width: 50px;
+    height: 65px;
+    width: 60px;
     vertical-align: middle;
     margin: 0px;
     padding: 0px;
 }
 
 .search-input {
-    height: 49px;
+    height: 60px;
     width: 190px;
     background-color: #ffffff;
     margin: 0px;
     padding: 0px;
-    border: 0px;
+    border-top: 3px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
+    border-left: 0;
+    border-right: 0;
 }
 
 .search-button {
-    height: 49px;
+    height: 65px;
     width: 80px;
     margin: 0px;
     padding: 0px;
     border: 0px;
     background-color: #0065FC;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     
+}
+
+input{
+    font-size: large ;
+}
+
+.button-image {
+    height: 60px;
 }
 
 /* filter section */
@@ -386,6 +411,27 @@ footer li {
         justify-content: end;
     }
 
+    main form {
+        width: 100%;
+    }
+
+    main p {
+        font-size: medium;
+    }
+
+    .search-input {
+        width: 300px;
+    }
+
+    .search-button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .filter-button h2 {
+        font-size: large;
+    }
+
     .accommodation-and-popular {
         display: block;
     }
@@ -396,10 +442,16 @@ footer li {
 
     .accomodation-cards .card {
     width: 30%;
+    height: 200px;
+    }
+
+    .accomodation-cards .card .card-title {
+        font-size: medium;
+        margin-top: 0;
     }
 
     .accomodation-cards .card .card-subtitle {
-        font-size: medium;
+        font-size: small;
     }
 
     .popular {
@@ -415,7 +467,7 @@ footer li {
 
     .popular-cards .card {
        width: 30%;
-       height: 200px;
+       height: 150px;
     ;
     
     }
@@ -423,7 +475,7 @@ footer li {
 
     .popular-cards img {
        width: 30%;
-       height: 200px;
+       height: 150px;
     }
 
     .popular-cards .card-title {
@@ -479,7 +531,6 @@ footer li {
 
     header nav {
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
@@ -487,23 +538,37 @@ footer li {
         width: 100%;
     }
 
+    #li1 {
+        padding-right: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
     nav ul li {
         font-size: xx-large;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
     }
 
     nav ul li a:hover {
         border-bottom: 2px solid #0065FC;
-        border-width: 200%;
         border-top: 0px;
+        width: 100%;
 
     }
 
-    nav ul li a:hover ::after {
-        border-top: none;
+    nav ul li a:hover::after {
+        border-top: 0;
     }
 
     main h1 {
         font-size:xxx-large;
+        margin-bottom: 0;
     }
 
     main p {
@@ -512,11 +577,29 @@ footer li {
 
     main form {
         width: 100%;
-        margin-left: 40px;
+        display: flex;
+        justify-content: center;
     }
+
+    .button-text {
+        display: none;
+    }
+
+    .button-image {
+        display: inline-block;
+        width: 40%;
+        margin-top: 10%;
+        background-size: cover;
+        background-position: center;
+      }
     
     .search-input {
         width: 70%;
+    }
+
+    .search-button {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 
     .filters {
@@ -524,18 +607,19 @@ footer li {
     }
 
     .filter-button {
-        width: 200px;
-        height: 60px;
+        width: 300px;
+        height: 80px;
         display: inline-flex;
         margin-top: 30px;
         margin-right: 20px;
-        margin-left: 100px;
         border: 4px solid;
         border-color: #F2F2F2;
+        justify-content: center;
+        border-radius: 40px;
     }
 
     .filter-button h2 {
-        font-size: large;
+        font-size: xx-large;
     }
 
     .filter-img {
@@ -563,6 +647,10 @@ footer li {
         flex-direction: column-reverse;
     }
 
+    .section-title {
+        font-size: xxx-large;
+    }
+
     .popular-cards {
         display: block;
     }
@@ -572,6 +660,14 @@ footer li {
     }
 
     .popular-cards .card-title {
+        font-size: 25px;
+    }
+
+    .popular-cards .card-subtitle {
+        font-size: 23px;
+    }
+
+    .popular-cards .card-rating {
         font-size: x-large;
     }
 
@@ -581,14 +677,31 @@ footer li {
 
     .accomodation-cards .card {
         width: 100%;
+        height: 300px;
     }
 
     .accomodation-cards img {
-        object-fit: fill;
+        height: 200px;
+    }
+
+    .accomodation-cards .card-title {
+        font-size: x-large;
+    }
+
+    .accomodation-cards .card-subtitle {
+        font-size: 20px;
+    }
+
+    .accomodation-cards .card-rating {
+        font-size: larger;
     }
 
     .accommodation-and-popular .accommodation {
         background-color: #ffffff;
+    }
+
+    .things-to-do h2 {
+        font-size: Xxx-large;
     }
 
     .Things-to-do-card {
@@ -600,15 +713,28 @@ footer li {
     .Things-to-do-card .card {
         display: block;
         width: 90%;
+        height: 300px;
         margin-top: 30px;
     }
 
     .Things-to-do-card .card img {
-        object-fit: fill;
+        height: 200px;
+    }
+
+    .Things-to-do-card h2 {
+        font-size: x-large;
     }
 
     .footer {
         display: block;
+    }
+
+    .footer .footer-section h2 {
+        font-size: x-large;
+    }
+
+    .footer .footer-section .footer-column li {
+        font-size: x-large;
     }
 
 
