@@ -67,7 +67,7 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    height: 660px;
+    height: 700px;
 }
 
 /****** Accommodation ***********/
@@ -86,7 +86,7 @@ body {
     margin-top: 33px;
     margin-bottom: 20px;
     width: 30%;
-    height: 210px;
+    height: 250px;
 }
 
 .accomodation-cards img {
